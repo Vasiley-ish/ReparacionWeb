@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('recordsList');
+})->name('records');;
+
+Route::get('/dashboard', function () {
+    return view('createRecord');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
