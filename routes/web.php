@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('recordsList');
-})->name('records');;
+    return view('landing');
+})->name('records');
 
 Route::get('/dashboard', function () {
     return view('createRecord');

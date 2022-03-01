@@ -1,0 +1,481 @@
+@font-face {
+    font-family: Rubik;
+    font-weight: 300;
+    src: url(../fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+    font-family: Rubik;
+    font-weight: 400;
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: Cuprum;
+    font-weight: 400;
+    src: url(../fonts/Cuprum-Regular.ttf);
+}
+
+@font-face {
+    font-family: Cuprum;
+    font-weight: 500;
+    src: url(../fonts/Cuprum-Bold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    scroll-behavior: smooth;
+    font-family: Cuprum;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 103px;
+    height: 103px;
+}
+
+header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header p,
+header a {
+    font-family: Cuprum;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav,
+.aside {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.aside {
+    justify-content: flex-end;
+}
+
+a {
+    margin-right: 37px;
+    text-align: center;
+}
+
+.logindevider {
+    margin-left: -32px;
+    margin-right: 5px;
+}
+
+.banner {
+    width: 100%;
+    height: 558px;
+    background-image: url(../img/FrontBanner.png);
+    background-position: center;
+}
+
+h1 {
+    margin-top: 131px;
+    font-family: Cuprum;
+    font-size: 72px;
+    line-height: 83px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: Cuprum;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: center;
+    width: auto;
+}
+
+h3 {
+    margin-bottom: 36px;
+    font-family: Cuprum;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    bottom: 36px;
+}
+
+h4 {
+    font-family: Cuprum;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 1rem 0 0.5rem;
+}
+
+.headline {
+    margin: 123px auto 25px;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.divader {
+    height: 2px;
+    min-width: 150px;
+    width: 100%;
+    background-color: #F8C238;
+}
+
+.table-divader{
+    grid-column: span 4/auto;
+}
+
+.bold{
+    font-weight: 500;
+}
+
+.wedo {
+    font-family: Cuprum;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.counter {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    margin-top: 17px;
+}
+
+.company-pros {
+    min-height: 290px;
+    background-color: #F2F0F0;
+}
+
+.column-pros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column-pros img {
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.column-pros p {
+    font-family: Cuprum;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 22px 0 19px;
+}
+
+.column-pros small {
+    font-family: Cuprum;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+
+    color: #393535;
+}
+
+.work-example-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.images-grid {
+    width: 52%;
+    min-width: 520px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 140px;
+}
+
+.photo-card {
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.tall {
+    grid-row: span 2/auto;
+}
+
+.long {
+    grid-column: span 2/auto;
+}
+
+.photo-card:hover {
+    transform: scale(150%);
+    transition: 0.5s ease-in-out;
+    z-index: 2;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.7);
+}
+
+.text-column {
+    width: 40%;
+    min-width: 320px;
+    margin-right: 2rem;
+}
+
+.text-column .smal{
+    font-size: 22px;
+}
+
+.text-wide{
+    width: 60%;
+}
+
+.text-column .bold{
+    font-size: 500;
+}
+
+.text-column p {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 113%;
+
+    margin-bottom: 8px;
+}
+
+.text-wide .thin{
+    font-weight: 300;
+    font-family: Rubik;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 24px;
+}
+
+li {
+    color: #F8C238;
+}
+
+
+.qiestion-image img {
+    width: 378px;
+    height: 666px;
+}
+
+.qestion-text{
+    width: 48%;
+    min-width: 360px;
+}
+
+.qestion-text p {
+    font-family: Cuprum;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    color: #393535;
+    margin-bottom: 25px;
+
+}
+
+.qestion-text span {
+    font-family: Cuprum;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 5px;
+}
+
+.yellow {
+    color: #F8C238;
+}
+
+.check {
+    font-family: Cuprum;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    margin-left: 2rem;
+}
+
+.flex {
+    justify-content: center;
+    align-items: center;
+}
+
+.space{
+    justify-content: space-around;
+}
+
+.price-list{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: .75rem;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.price-list .price-name{
+    font-family: Cuprum;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.price-list .bold{
+    font-weight: 500;
+}
+
+sup{
+    font-style: Rubik;
+    font-size: 16px;
+}
+
+.item{
+    font-family: Cuprum;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    color: #393535;
+}
+
+.yes{
+    font-family: Cuprum;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+    color: #428956;
+
+}
+
+.no{
+    font-family: Cuprum;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+    color:  #B22B2B;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.userroom-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem  2rem ;
+    box-shadow: 0px 4px 46px -3px rgba(0, 0, 0, 0.25);
+    margin-bottom: 46px;
+}
+
+.userroom-card img{
+   width: 25%;
+   height: 25%;
+   min-width: 260px;
+   min-height: 260px;
+   object-fit: cover;
+}
+
+button{
+    border: none;
+    background-color: #F87D38;
+    border-radius: 5px;
+    font-family: Cuprum;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+    padding: .3rem 4rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:  #ec7051;
+}
+
+footer {
+    margin-top: 123px;
+    min-height: 320px;
+    background-color: #393535;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-content {
+    margin: -1rem 10% 1rem;
+    height: 80%;
+}
+
+footer h1 {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 32px;
+}
+
+footer p {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    width: 40%;
+    min-width: 240px;
+    margin-top: 20px;
+}
+
+footer span {
+    font-family: Cuprum;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    color: #F8C238;
+}
