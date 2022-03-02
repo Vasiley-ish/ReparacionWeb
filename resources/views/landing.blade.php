@@ -4,6 +4,10 @@
     Reparations
 @endsection
 
+@section('label-css')
+<link rel="stylesheet" href="css/filter_landing.css">
+@endsection
+
 @section('main')
 <div class="banner">
             <div class="wrapper">

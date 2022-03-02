@@ -17,8 +17,18 @@ Route::get('/', function () {
     return view('landing');
 })->name('records');
 
-Route::get('/dashboard', function () {
-    return view('createRecord');
-})->middleware(['auth'])->name('dashboard');
+Route::group(['middleware'=>['auth']], function () {
+    
+    Route::get('/dashboard', function () {
+        return view('user');
+    })->name('dashboard');
+
+    Route::get('/admin', function () {
+        return view('admin');
+    })->name('admin');
+
+});
+
+
 
 require __DIR__.'/auth.php';

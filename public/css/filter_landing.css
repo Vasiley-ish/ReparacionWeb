@@ -1,0 +1,83 @@
+.container {
+    width:90%;
+    margin:0 auto;
+  }
+  input[type="radio"] {
+      display:none;
+  }
+  label {
+    width:18%;
+    float:left;
+    text-align:center;
+    background:#ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color:#222222;
+    padding:0.5%;
+    margin:0.5%;
+    margin-bottom:30px;
+    cursor:pointer;
+  }
+  input[type="radio"][id="blue"]:checked + label {
+    background:#F8C238;
+  }
+  input[type="radio"][id="blue"]:checked ~ .red, input[type="radio"][id="blue"]:checked ~ .green,input[type="radio"][id="blue"]:checked ~ .orange, input[type="radio"][id="blue"]:checked ~ .purple  {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+  input[type="radio"][id="red"]:checked + label {
+    background:#F87D38;
+  }
+  input[type="radio"][id="red"]:checked ~ .blue, input[type="radio"][id="red"]:checked ~ .green, input[type="radio"][id="red"]:checked ~ .purple, input[type="radio"][id="red"]:checked ~ .orange{
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+  input[type="radio"][id="green"]:checked + label {
+    background:#F8C238;
+  }
+  input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]:checked ~ .red, input[type="radio"][id="green"]:checked ~ .purple, input[type="radio"][id="green"]:checked ~ .orange {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+  
+  input[type="radio"][id="orange"]:checked + label {
+    background:#82BDDE;
+  }
+  input[type="radio"][id="orange"]:checked ~ .blue, input[type="radio"][id="orange"]:checked ~ .red, input[type="radio"][id="orange"]:checked ~ .purple, input[type="radio"][id="orange"]:checked ~ .green {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+  
+  input[type="radio"][id="purple"]:checked + label {
+    background:#83D3CF;
+  }
+  input[type="radio"][id="purple"]:checked ~ .blue, input[type="radio"][id="purple"]:checked ~ .red, input[type="radio"][id="purple"]:checked ~ .orange, input[type="radio"][id="purple"]:checked ~ .green {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+  
+  .tile {
+    width:calc(100%);
+    position: relative;
+    right: 1%;
+    float:right;
+    transition:all 1s;
+    margin:0.5%;
+    padding:2.5% 1rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 46px -3px rgba(0, 0, 0, 0.25);
+  }

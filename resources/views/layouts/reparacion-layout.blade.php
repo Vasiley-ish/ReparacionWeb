@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Ремонт, ">
     <title>  @yield('title')</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-    <link rel="stylesheet" href="css/filter_landing.css">
+    <link rel="stylesheet" href={{ URL::asset('css/style.css'); }} >
+    @yield('label-css')
 </head>
 
 <body>
