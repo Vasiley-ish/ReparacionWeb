@@ -15,15 +15,16 @@
       <label for="blue">+ Новая заявка</label>
     
      
-          <form action="POST" class="tile blue">
+          <form method="POST"  enctype="multipart/form-data" action="dashboard/submit" class="tile blue">
+          @csrf
               <input type="text" placeholder="Адрес" id="adress">
               <select name="select" id="category">
-                <option value="low" selected>Бюджетный ремонт</option> 
-                <option value="mid" >Оптимальный ремонт</option>
-                <option value="top">Премиум ремонт</option>
+                <option>Бюджетный ремонт</option> 
+                <option>Оптимальный ремонт</option>
+                <option>Премиум ремонт</option>
               </select>
               <input type="number" id="price" value="10000">
-              <textarea name="discription" id="discription" cols="30" rows="10" placeholder="Описание"></textarea>
+              <textarea name="discription" id="diskription" cols="30" rows="10" placeholder="Описание"></textarea>
               <input type="file" id="photo" >
               <button> Создать заявку</button>
           </form>
