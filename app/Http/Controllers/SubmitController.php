@@ -11,7 +11,7 @@ class SubmitController extends Controller
 {
     public  function submit(SubmitRequest $req){
      
-        $form = new Submit();
+        $form = new SubmitModel();
         $form->name = $req->user()->name;
         $form->adress = $req->input('adress');
         $form->category = $req->input('category');
@@ -19,7 +19,7 @@ class SubmitController extends Controller
         $form->diskription = $req->input('diskription');
        
         if($req->file('photo') != null) {
-            $form->image = substr($req->file('beforeImage')->store('public/img/submits') , 13);
+            $form->photo = substr($req->file('photo')->store('public/img/submits') , 13);
         }
 
         $form->save();
@@ -27,7 +27,30 @@ class SubmitController extends Controller
         return redirect()->route('dashboard');
     }
 
-    public  function show(){
-        return view('user');
+    public  function delete($id){
+     
+        SubmitModel::find($id)->delete();
+        return redirect()->route('dashboard');
+     }
+
+    public  function show(SubmitRequest $req){
+        $form = new SubmitModel();
+        return view('user', ['data' => $form->orderBy('updated_at', 'desc')->where( 'name', $req->user()->name)->get()]);
+    }
+
+    public  function showAdmin(){
+        $form = new SubmitModel();
+        return view('admin', ['data' => $form->orderBy('created_at', 'desc')->get()]);
+    }
+
+    public  function adminDelete($id){
+     
+        SubmitModel::find($id)->delete();
+        return redirect()->route('admin');
+     }
+
+    public function showLanding() {
+        $form = new SubmitModel();
+        return view('landing',  ['data' => $form->orderBy('updated_at', 'desc')->get()]);
     }
 }

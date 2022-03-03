@@ -20,7 +20,7 @@ class CreateSubmitModelsTable extends Migration
             $table->string('category');
             $table->integer('price');
             $table->string('diskription');
-            $table->string('photo');
+            $table->Binary('photo');
             $table->timestamps();
         });
     }

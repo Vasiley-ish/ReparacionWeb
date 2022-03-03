@@ -1,12 +1,7 @@
 <?php
 
-use App\Http\Controllers;
-
-use Illuminate\Http\Request;
-
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SubmitController;
-use Illuminate\Http\SubmitRequest;
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,9 +13,9 @@ use Illuminate\Http\SubmitRequest;
 |
 */
 
-Route::get('/', function () {
-    return view('landing');
-})->name('landing');
+Route::get('/',
+[SubmitController::class, 'showLanding']
+)->name('landing');
 
 Route::group(['middleware'=>['auth']], function () {
 
@@ -32,14 +27,21 @@ Route::group(['middleware'=>['auth']], function () {
       [SubmitController::class, 'submit']
     )->name('submit');
 
+    Route::get('dashboard/delete/{id}', 
+      [SubmitController::class, 'delete']
+    )->name('delete');
 });
 
 
 Route::group(['middleware' => ['role:admin']], function () {
 
-    Route::get('/admin', function () {
-        return view('admin');
-    })->name('admin');
+    Route::get('/admin', 
+        [SubmitController::class, 'showAdmin']
+    )->name('admin');
+
+    Route::get('admin/delete/{id}', 
+    [SubmitController::class, 'adminDelete']
+  )->name('adminDelete');
 
 });
 

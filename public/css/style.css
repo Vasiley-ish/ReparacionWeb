@@ -35,6 +35,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+main{
+    min-height: 50vh;
+}
+
 .wrapper {
     display: flex;
     align-items: center;

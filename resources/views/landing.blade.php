@@ -13,7 +13,17 @@
             <div class="wrapper">
                 <h1>REPARACION</h1>
                 <p class="wedo">Ремонт жилых помещений</p>
-                <p class="counter">Заявок принято: 576</p>
+                
+                <p class="counter">
+                  
+                        @php
+                            $accepted = 0;
+                            foreach ($data as $value) {
+                                    $accepted++;
+                            };
+                        @endphp
+                    Заявок принято: {{ $accepted }} </p>
+               
             </div>
         </div>
 
