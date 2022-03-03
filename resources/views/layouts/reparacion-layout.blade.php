@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Ремонт, ">
+    <meta name="keywords" content="Reparacion ,Репарейшнс, Ремонт, Восстановление помещений, Строительная компания">
     <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
     <title>  @yield('title')</title>
     <link rel="stylesheet" href={{ URL::asset('css/style.css') }} >
@@ -17,7 +17,7 @@
         <nav>
             <img class="logo" src="img/LOGO.png" alt="no_logo">
             <div class="main-links">
-                <a href="/">Главная</a>
+                <a href="/#">Главная</a>
                 <a href="/#price">Цена</a>
                 <a href="/#examples">Наши работы</a>
             </div>
@@ -34,7 +34,7 @@
 
                 @switch(Auth::user()->name)
                     @case('Админ')
-                    <a href="/admin">Админка</a>
+                    <a href="/admin">Панель админа </a>
                     @break
                     
                     @default

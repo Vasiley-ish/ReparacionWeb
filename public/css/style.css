@@ -483,3 +483,37 @@ footer span {
     line-height: 32px;
     color: #F8C238;
 }
+
+.userroom-card{
+    flex-wrap: wrap;
+}
+
+@media (max-width:1100px){
+
+.images-grid{
+    transform: scale(0.83);
+}
+
+.price-list{
+    transform: scale(0.83);
+}
+
+}
+
+@media (max-width:700px){
+
+    .images-grid{
+        transform: scale(0.73);
+    }
+
+    .price-list{
+        transform: scale(0.73);
+    }
+
+    .text-wide{
+        margin-left: 6rem;
+    }
+    
+    }
+
+ 
