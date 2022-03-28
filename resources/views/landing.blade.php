@@ -8,411 +8,70 @@
 <link rel="stylesheet" href="css/filter_landing.css">
 @endsection
 
+@include('layouts/header')
+
 @section('main')
-<div class="banner">
-            <div class="wrapper">
-                <h1>REPARACION</h1>
-                <p class="wedo">Ремонт жилых помещений</p>
-                
-                <p class="counter">
-                  
-                        @php
-                            $accepted = 0;
-                            foreach ($data as $value) {
-                                    $accepted++;
-                            };
-                        @endphp
-                    Заявок принято: {{ $accepted }} </p>
-               
-            </div>
+
+    <img src="{{ URL::asset('img/fake-landing.png') }}" alt="a" class="screen-height">
+
+    <div class="alotta-text ">
+    <div class="text-block text-block--left">
+            <h2 class="title">Как мы начали</h2>
+            <p class="text">
+            Три наших основателя познакомились, работая в крупных фирмах в индустрии цифрового маркетинга. Мы регулярно видели, как клиенты продавали вещи, которые им не были нужны, или убеждали их перерасходовать средства на плохо оптимизированные маркетинговые планы. Нам это не понравилось, поэтому мы решили основать собственную компанию и что-то с этим сделать. Очевидно, что мы не можем устранить недостатки такой масштабной отрасли, поэтому вместо этого мы решили подавать пример. Вся наша компания основана на честности и исследованиях, основанных на данных.</p>
+            <p class="text">
+Регулярное SEO - это все, что нужно для того, чтобы рассказать клиентам о том, что, по нашему мнению, им действительно нужно. Мы изучаем их бизнес, опыт и отрасль, а затем разрабатываем индивидуальный маркетинговый план, который действительно имеет смысл для их конкретной ситуации.</p>
         </div>
 
-        <div class="company-pros">
-            <div class="wrapper row">
-                <div class="column-pros">
-                    <img src="img/Persent.png" alt="%">
-                    <p>Cкидки в 10-20% на материалы</p>
-                    <small>За счет оптовых поставщиков</small>
-                </div>
-                <div class="column-pros">
-                    <img src="img/Calendar.png" alt="📅">
-                    <p>Сдадим работу в срок</p>
-                    <small>Иначе выплатим 1000 руб <br>
-                        за каждый день просрочки</small>
-                </div>
-                <div class="column-pros">
-                    <img src="img/DoneMark.png" alt="✓">
-                    <p>Решим все вопросы с ТСЖ и УК</p>
-                    <small id="examples">От отключения стояков до
-                        перепланировки</small>
-                </div>
-            </div>
-        </div>
+        <div class="text-block text-block--right">
+            <h2 class="title">О нас</h2>
+            <p class="text">Regex SEO - это хьюстонская компания SEO-маркетинга с полным спектром услуг, которая была создана группой опытных профессионалов с большим опытом работы в сфере SEO-маркетинга. Наша SEO-компания предлагает широкий спектр профессиональных SEO-кампаний и услуг, специально разработанных для того, чтобы помочь вам добиться успеха в Интернете. </p>
 
-        <div class="wrapper">
-            <div class="wrapper headline">
-                <div class="divader"></div>
-                <h2>Наши работы</h2>
-                <div class="divader"></div>
-            </div>
+            <p class="text">Подходя к SEO, многие компании мыслят на национальном уровне. Наши эксперты по SEO обнаружили, что сбор и поддержание местной и органической аудитории в первую очередь является ключом к росту за пределами вашего населенного пункта. Локальная поисковая оптимизация проста, когда выделяются три ключевых компонента-
+</p>
 
-            <div class="container">
-                <input type="radio" id="blue" name="color" value="" checked />
-                <label for="blue">Ремонт квартиры</label>
-                <input type="radio" id="red" name="color" />
-                <label for="red">Ремонт санузла</label>
-                <input type="radio" id="green" name="color" />
-                <label for="green">Ремонт квартиры</label>
-                <input type="radio" id="orange" name="color" />
-                <label for="orange">Ремонт коттеджа</label>
-                <input type="radio" id="purple" name="color" />
-                <label for="purple">Ремонт комнаты</label>
+            <p class="text">- Контент: Высококачественный контент - это основа успешной стратегии локального SEO. Контент вашего веб-сайта является ключом к укреплению доверия у обычных посетителей и превращению этого посещения в лидирующую позицию. Как выглядит этот процесс? Во-первых, мы проверяем ваш текущий контент. Затем наши эксперты по SEO в Хьюстоне проведут исследование вашей отрасли, чтобы определить, на какие ключевые фразы следует ориентироваться. С этого момента ваш опыт и наши талантливые авторы будут сотрудничать в создании контента, который преобразует ваш органический трафик.
+<br><br>
+- Охват: Контент сам по себе не поможет вам достичь ваших целей, поэтому наши эксперты по SEO используют целенаправленную и персонализированную стратегию охвата. У нас есть штатные специалисты по связям с общественностью, которые создают достойный внимания контент для вашего сайта, а также сотрудничают со смежными нишами, и все это в конечном итоге способствует привлечению реферального трафика и созданию высококачественных обратных ссылок.
+<br><br>
+- Оптимизация кода веб-сайта: Из месяца в месяц наши специалисты по SEO будут следить за работоспособностью вашего веб-сайта и дополнительно оптимизировать его для улучшения пользовательского опыта. От платформы управления контентом до пользовательских веб-сайтов необходимо внедрять лучшие методы кодирования. Это не только повышает скорость и удобство использования веб-сайта, но и является прямым сигналом для повышения рейтинга вашего сайта в Google.
 
-                <div class="tile blue">
-                    <h3>Ремонт квартиры, ул. 40 лет Победы д. 140</h3>
-                    <div class="work-example-card">
-                        <div class="images-grid">
-                            <div class="photo-card" style="background-image: url(img/215-1024x683.jpg);"></div>
-                            <div class="photo-card" style="background-image: url(img/215-1024x683.jpg);"></div>
-                            <div class="photo-card tall" style="background-image: url(img/82279913_i_07.jpg);"></div>
-                            <div class="photo-card" style="background-image: url(img/215-1024x683.jpg);"></div>
-                            <div class="photo-card"
-                                style="background-image: url(img/33192d53349d1964cb4d289e29aa629538d7e0ae.jpeg);"></div>
-                            <div class="photo-card long" style="background-image: url(img/82279913_i_07.jpg);"></div>
-                        </div>
-                        <div class="text-column">
-                            <h4>Характеристики</h4>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
+ </p>
 
-                            <h4>Вид работ</h4>
-                            <ul>
-                                <li><span>Lorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, siorem ipsum dolor, sit aorem ipsum dolor, sit at
-                                        amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit aorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sitorem ipsum dolor, sit aorem ipsum dolor, sit aorem ipsum
-                                        dolor, sit a amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dorem ipsum dolor, sit aolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum orem ipsum dolor, sit aorem ipsum dolor, sit adolor, sit
-                                        amet.<span></li>
-                                <li><span>Lorem ipsum dolororem ipsum dolor, sit a, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit orem ipsum dolor, sit aorem ipsum dolor, sit
-                                        aamet.<span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="tile red">
-                    <h3>Ремонт комнаты, ул. Lorema Ipsuma, дом 4812</h3>
-                    <div class="work-example-card">
-                        <div class="images-grid">
-                            <div class="photo-card" style="background-image: url(img/215-1024x683.jpg);"></div>
-                            <div class="photo-card tall" style="background-image: url(img/413.jpg);"></div>
-                            <div class="photo-card tall"
-                                style="background-image: url(img/imgpsh_fullsize_anim-kopiya5e044429860b6.jpg);"></div>
+            <p class="text">Для SEO с регулярными выражениями локальное SEO означает вывод вашего сайта на первую страницу и сохранение его там. Используя наши основанные на данных и проверенные стратегии SEO, мы предоставляем вам четкие доказательства того, что эта стратегия поможет вашему бизнесу добиться существенного роста.  </p>
 
-                            <div class="photo-card"
-                                style="background-image: url(img/33192d53349d1964cb4d289e29aa629538d7e0ae.jpeg);"></div>
-                        </div>
-                        <div class="text-column">
-                            <h4>Характеристики</h4>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
 
-                            <h4>Вид работ</h4>
-                            <ul>
-                                <li><span>Lorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, siorem ipsum dolor, sit aorem ipsum dolor, sit at
-                                        amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit aorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sitorem ipsum dolor, sit aorem ipsum dolor, sit aorem ipsum
-                                        dolor, sit a amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dorem ipsum dolor, sit aolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum orem ipsum dolor, sit aorem ipsum dolor, sit adolor, sit
-                                        amet.<span></li>
-                                <li><span>Lorem ipsum dolororem ipsum dolor, sit a, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit orem ipsum dolor, sit aorem ipsum dolor, sit
-                                        aamet.<span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="tile green">
-                    <h3>Ремонт квартиры, ул. 40 лет Победы д. 140</h3>
-                    <div class="work-example-card">
-                        <div class="images-grid">
-                            <div class="photo-card" style="background-image: url(img/215-1024x683.jpg);"></div>
-                            <div class="photo-card" style="background-image: url(img/215-1024x683.jpg);"></div>
-                            <div class="photo-card tall" style="background-image: url(img/82279913_i_07.jpg);"></div>
-                            <div class="photo-card" style="background-image: url(img/215-1024x683.jpg);"></div>
-                            <div class="photo-card"
-                                style="background-image: url(img/33192d53349d1964cb4d289e29aa629538d7e0ae.jpeg);"></div>
-                            <div class="photo-card long" style="background-image: url(img/82279913_i_07.jpg);"></div>
-                        </div>
-                        <div class="text-column">
-                            <h4>Характеристики</h4>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-
-                            <h4>Вид работ</h4>
-                            <ul>
-                                <li><span>Lorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, siorem ipsum dolor, sit aorem ipsum dolor, sit at
-                                        amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit aorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sitorem ipsum dolor, sit aorem ipsum dolor, sit aorem ipsum
-                                        dolor, sit a amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dorem ipsum dolor, sit aolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum orem ipsum dolor, sit aorem ipsum dolor, sit adolor, sit
-                                        amet.<span></li>
-                                <li><span>Lorem ipsum dolororem ipsum dolor, sit a, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit orem ipsum dolor, sit aorem ipsum dolor, sit
-                                        aamet.<span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="tile orange">
-                    <h3>Ремонт квартиры, ул. 40 лет Победы д. 140</h3>
-                    <div class="work-example-card">
-                        <div class="images-grid">
-                            <div class="photo-card" style="background-image: url(img/215-1024x683.jpg);"></div>
-                            <div class="photo-card" style="background-image: url(img/215-1024x683.jpg);"></div>
-                            <div class="photo-card tall" style="background-image: url(img/82279913_i_07.jpg);"></div>
-                            <div class="photo-card" style="background-image: url(img/215-1024x683.jpg);"></div>
-                            <div class="photo-card"
-                                style="background-image: url(img/33192d53349d1964cb4d289e29aa629538d7e0ae.jpeg);"></div>
-                            <div class="photo-card long" style="background-image: url(img/82279913_i_07.jpg);"></div>
-                        </div>
-                        <div class="text-column">
-                            <h4>Характеристики</h4>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-
-                            <h4>Вид работ</h4>
-                            <ul>
-                                <li><span>Lorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, siorem ipsum dolor, sit aorem ipsum dolor, sit at
-                                        amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit aorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sitorem ipsum dolor, sit aorem ipsum dolor, sit aorem ipsum
-                                        dolor, sit a amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dorem ipsum dolor, sit aolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum orem ipsum dolor, sit aorem ipsum dolor, sit adolor, sit
-                                        amet.<span></li>
-                                <li><span>Lorem ipsum dolororem ipsum dolor, sit a, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit orem ipsum dolor, sit aorem ipsum dolor, sit
-                                        aamet.<span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="tile purple">
-                    <h3>Ремонт квартиры, ул. 40 лет Победы д. 140</h3>
-                    <div class="work-example-card">
-                        <div class="images-grid">
-                            <div class="photo-card" style="background-image: url(img/215-1024x683.jpg);"></div>
-                            <div class="photo-card" style="background-image: url(img/215-1024x683.jpg);"></div>
-                            <div class="photo-card tall" style="background-image: url(img/82279913_i_07.jpg);"></div>
-                            <div class="photo-card" style="background-image: url(img/215-1024x683.jpg);"></div>
-                            <div class="photo-card"
-                                style="background-image: url(img/33192d53349d1964cb4d289e29aa629538d7e0ae.jpeg);"></div>
-                            <div class="photo-card long" style="background-image: url(img/82279913_i_07.jpg);"></div>
-                        </div>
-                        <div class="text-column">
-                            <h4>Характеристики</h4>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-                            <p>Lorem ipsum dolor, sit amet adipisicing.</p>
-
-                            <h4>Вид работ</h4>
-                            <ul>
-                                <li><span>Lorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, siorem ipsum dolor, sit aorem ipsum dolor, sit at
-                                        amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit aorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sitorem ipsum dolor, sit aorem ipsum dolor, sit aorem ipsum
-                                        dolor, sit a amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dorem ipsum dolor, sit aolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit amet.<span></li>
-                                <li><span>Lorem ipsum orem ipsum dolor, sit aorem ipsum dolor, sit adolor, sit
-                                        amet.<span></li>
-                                <li><span>Lorem ipsum dolororem ipsum dolor, sit a, sit amet.<span></li>
-                                <li><span>Lorem ipsum dolor, sit orem ipsum dolor, sit aorem ipsum dolor, sit
-                                        aamet.<span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="wrapper headline">
-                <div class="divader"></div>
-                <h2 name="examples">Мы решим все вопросы</h2>
-                <div class="divader"></div>
-            </div>
-
-            <h3>Вам не нужно волноваться по разным организационным вопросам</h3>
-
-            <div class="wrapper row flex space">
-                <div class="qestion-text">
-                    <span class="yellow">Фото и видео отчеты на Ваш телефон</span>
-                    <p>Можно ежедневно контролировать ход работ в вашем помещении</p>
-
-                    <span>Результат с гарантией</span>
-                    <p>Даем 1 год гарантии на выполненные работы</p>
-
-                    <span class="yellow">Рассрочка оплаты</span>
-                    <p>Оплатить ремонт можно поэтапно, по факту выполненных работ.</p>
-
-                    <span>Помощь в покупке материалов</span>
-                    <p>Поможем приобрести стройматериалы со скидкой до 20%.
-                        Организуем доставку до вашего объекта.</p>
-
-                    <span class="yellow">Только экологичные материалы</span>
-                    <p>Материали, предоставленные нашими постоянными поставшиками всегда качественны и максимально
-                        экологичны</p>
-
-                    <span>Работа по договору и детальной смете</span>
-                    <p>Ремонт не выйдет за рамки бюджета и прописанного
-                        в договоре срока.</p>
-                </div>
-
-                <div class="qiestion-image">
-                    <img src="img/PinClipart.com_construction-man-clip-art_4216209.png" alt="thumbsup">
-                </div>
-            </div>
-            <div class="wrapper row flex">
-                <img src="img/DoneMark.png" alt="done">
-                <p class="check yellow"> После ремонта делаем уборку и оставляем за собой чистоту и порядок!</p>
-            </div>
-
-            <div class="wrapper headline">
-                <div class="divader"></div>
-                <h2 name="examples" id="price">Сделаем ремонт под ваш бюджет</h2>
-                <div class="divader"></div>
-            </div>
-
-            <div class="price-list">
-
-                <p class="price-name">Наименование услуги</p>
-                <p class="price-name text-center">Бюджетный</p>
-                <p class="price-name text-center">Оптимальный</p>
-                <p class="price-name text-center">Премиум</p>
-
-                <div class="divader table-divader" style="opacity: 0;"></div>
-                <div class="divader table-divader" style="opacity: 0;"></div>
-
-                <p class="item">Шпаклевка стен</p>
-                <span class="yes">ДА</span>
-                <span class="yes">ДА</span>
-                <span class="yes">ДА</span>
-
-                <p class="item">Поклейка обоев</p>
-                <span class="yes">ДА</span>
-                <span class="yes">ДА</span>
-                <span class="yes">ДА</span>
-
-                <p class="item">Покраска </p>
-                <span class="yes">ДА</span>
-                <span class="yes">ДА</span>
-                <span class="yes">ДА</span>
-
-                <p class="item">Выравнивание стен</p>
-                <span class="no">НЕТ</span>
-                <span class="yes">ДА</span>
-                <span class="yes">ДА</span>
-                
-                <p class="item">Электропроводка </p>
-                <span class="no">НЕТ</span>
-                <span class="yes">ДА</span>
-                <span class="yes">ДА</span>
-
-                <p class="item">Замена водопроводных струб</p>
-                <span class="no">НЕТ</span>
-                <span class="yes">ДА</span>
-                <span class="yes">ДА</span>
-
-                <p class="item">Замена канализации </p>
-                <span class="no">НЕТ</span>
-                <span class="yes">ДА</span>
-                <span class="yes">ДА</span>
-
-                <p class="item">Замена радиаторов отопления</p>
-                <span class="no">НЕТ</span>
-                <span class="yes">ДА</span>
-                <span class="yes">ДА</span>
-
-                <p class="item">Ремонт ванной комнаты</p>
-                <span class="no">НЕТ</span>
-                <span class="yes">ДА</span>
-                <span class="yes">ДА</span>
-
-                <p class="item">Замена ванной и сантехники</p>
-                <span class="no">НЕТ</span>
-                <span class="yes">ДА</span>
-                <span class="yes">ДА</span>
-
-                <p class="item">Ремонт туалета</p>
-                <span class="no">НЕТ</span>
-                <span class="yes">ДА</span>
-                <span class="yes">ДА</span>
-
-                <p class="item">Замена пола</p>
-                <span class="yes">Стелятся без замены основы</span>
-                <span class="yes">Основа меняется</span>
-                <span class="yes">Основа меняется</span>
-
-                <p class="item">Потолки </p>
-                <span class="yes">Одноуровневые натяжные</span>
-                <span class="yes">Одноуровневые натяжные</span>
-                <span class="yes">Натяжные любой сложности</span>
-
-                <p class="item">Перепланировка</p>
-                <span class="no">НЕТ</span>
-                <span class="no">НЕТ</span>
-                <span class="yes">ДА</span>
-
-                <p class="item">Элементы декора</p>
-                <span class="no">НЕТ</span>
-                <span class="no">НЕТ</span>
-                <span class="yes">ДА</span>
-
-                <p class="item">Дизайн проект</p>
-                <span class="no">НЕТ</span>
-                <span class="no">НЕТ</span>
-                <span class="yes">ДА</span>
-
-                <div class="divader table-divader"></div>
-
-                <p class="price-name bold ">Цена за м<sup>2</sup>, Руб</p>
-                <p class="price-name bold text-center">от 1300</p>
-                <p class="price-name bold text-center">от 3500</p>
-                <p class="price-name bold text-center">от 5000</p>
-
-                <div class="divader table-divader"></div>
-
-            </div>
-            
 
         </div>
+
+</div>
+        <div class="footer-thing">
+        <h2 class="title col-w">Процесс создания сайта</h2>
+        <p class="text col-w">
+Мы получаем много вопросов о нашем процессе SEO и цифрового маркетинга в Хьюстоне. Благодаря такому уникальному подходу и крупным инвестициям на линии мы готовы ответить на все вопросы и проблемы, которые могут возникнуть у наших клиентов или потенциальных клиентов. Если вы ищете подробную информацию о том, как мы будем работать с вашей компанией, чтобы добиться наилучших результатов, мы будем рады поговорить с вами лично! Вы всегда можете заполнить нашу форму, позвонить нам или назначить встречу. Но если вы торопитесь, мы собрали несколько вопросов, которые</p>
+</div>
+
+<div class="alotta-text ">
+        <div class="text-block text-block--right">
+            <h2 class="title">Часто задаваемые вопросы</h2>
+            <p class="text">Мы получаем много вопросов о нашем процессе SEO и цифрового маркетинга в Хьюстоне. Благодаря такому уникальному подходу и крупным инвестициям на линии мы готовы ответить на все вопросы и проблемы, которые могут возникнуть у наших клиентов или потенциальных клиентов. Если вы ищете подробную информацию о том, как мы будем работать с вашей компанией, чтобы добиться наилучших результатов, мы будем рады поговорить с вами лично! Вы всегда можете заполнить нашу форму, позвонить нам или назначить встречу. Но если вы торопитесь, мы собрали несколько вопросов, которые нам постоянно задают.</p>
+
+         
+
+            <h2 class="title title--small"> - 
+Зачем мне нужен SEO/Цифровой маркетинг</h2>
+            <p class="text">SEO и цифровой маркетинг обеспечивают бизнесу или бренду присутствие в Интернете, необходимое для конкуренции на современном рынке. Благодаря огромной базе онлайн-потребителей произошел сдвиг в сторону онлайн-продаж, маркетинга и коммуникаций. Но из-за этого отдельным компаниям становится все труднее и труднее быть замеченными в Интернете. SEO помогает вам быть замеченным, и наше хьюстонское SEO-агентство использует основанные на исследованиях методологии для увеличения вашего органического трафика и общей видимости.</p>
+            <h2 class="title title--small"> - С кем я работаю в Regex SEO</h2>
+            <p class="text">В Regex SEO вы работаете со всей командой. Когда мы работаем над полноценной кампанией цифрового маркетинга для компании, мы делаем понемногу все, от веб-дизайна до создания контента и SEO-исследований. По пути вы будете работать с нашими дизайнерами, маркетологами, писателями и командой социальных сетей. Вы можете прочитать больше о том, с кем вы будете работать здесь!</p>
+            <h2 class="title title--small"> - Когда я узнаю, что мой план SEO работает?</h2>
+            <p class="text ">Наша команда будет работать над вашим сайтом ежедневно. Мы отслеживаем всю активность с помощью сторонних систем отслеживания, таких как SEMrush, Google Analytics и AHREFS. Показатели прогресса будут варьироваться от клиента к клиенту, но обычно мы сможем показать прогресс в течение первых нескольких недель.</p>            
+        </div>
+
+    </div>
+
+    <div class="footer-thing">
+        <h2 class="title col-w">Давайте Работать Вместе</h2>
+        <p class="text col-w">Если вы хотите привлечь больше трафика на свой сайт или превратить больше посетителей в платящих клиентов, свяжитесь с нами сегодня для получения бесплатной индивидуальной консультации. Мы поможем вам найти лучшие решения для вашего проекта и предоставим индивидуальное предложение для выполнения работы.</p>
+
+    </div>
 @endsection

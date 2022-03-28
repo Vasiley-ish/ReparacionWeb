@@ -16,11 +16,7 @@ class CreateSubmitModelsTable extends Migration
         Schema::create('submit_models', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('adress');
-            $table->string('category');
-            $table->integer('price');
-            $table->string('diskription');
-            $table->Binary('photo');
+            $table->string('title');
             $table->timestamps();
         });
     }
