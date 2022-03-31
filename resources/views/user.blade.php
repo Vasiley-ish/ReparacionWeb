@@ -83,394 +83,45 @@
                         </button>
                     </div>
                 </div>
-                <div class="table__item ">
-                    <div class="table__title text">
+                
 
-                        <span>Terms & Conditions</span>
-                    </div>
-                    <div class="table__elements">
-                        <div class="table__element table-top-text">
+                @foreach($data as $element)
+                    <div class="table__item">
+                        <div class="table__title text">
+
+                            <span>{{$element->title}}</span>
                         </div>
-                    </div>
-                    <div class="table__sidepanel item__sidepanel">
-                        <div class="checkbox-container">
-                            <label for="1" class="table-top-text checkbox-label"></label>
-                            <input type="checkbox" id="1" class="checkbox"></input>
+                        <div class="table__elements">
+                            <div class="table__element table-top-text">
+                            </div>
                         </div>
-                        <div class="icon sidepanel__setting-icon table__pop-up">
-                            <button>
+                        <div class="table__sidepanel item__sidepanel">
+                            <div class="checkbox-container">
+                                <label for="1" class="table-top-text checkbox-label"></label>
+                                <input type="checkbox" id="1" class="checkbox"></input>
+                            </div>
+                            <div class="icon sidepanel__setting-icon table__pop-up">
                                 <svg class="icon dots-menu">
                                     <use xlink:href="#dots-menu"></use>
                                 </svg>
-                            </button>
-                            <div class="pop-up-card">
-                                <a href="#" class="pop-up__link link">
-                                    edit
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    duplicate
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    unpublish
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    delete
-                                </a>
+                                <div class="pop-up-card">
+                                    <a href="#" class="pop-up__link link">
+                                        edit
+                                    </a>
+                                    <a href="#" class="pop-up__link link">
+                                        duplicate
+                                    </a>
+                                    <a href="#" class="pop-up__link link">
+                                        unpublish
+                                    </a>
+                                    <a href="#" class="pop-up__link link">
+                                        delete
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="table__item item--unactive">
-                    <div class="table__title text">
-
-                        <span>Start Your Order</span>
-                    </div>
-                    <div class="table__elements">
-                        <div class="table__element table-top-text">
-                        </div>
-                    </div>
-                    <div class="table__sidepanel item__sidepanel">
-                        <div class="checkbox-container">
-                            <label for="1" class="table-top-text checkbox-label"></label>
-                            <input type="checkbox" id="1" class="checkbox"></input>
-                        </div>
-                        <div class="icon sidepanel__setting-icon table__pop-up">
-                            <svg class="icon dots-menu">
-                                <use xlink:href="#dots-menu"></use>
-                            </svg>
-                            <div class="pop-up-card">
-                                <a href="#" class="pop-up__link link">
-                                    edit
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    duplicate
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    unpublish
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    delete
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="table__item">
-                    <div class="table__title text">
-
-                        <span>Speaking Inquiries</span>
-                    </div>
-                    <div class="table__elements">
-                        <div class="table__element table-top-text">
-                        </div>
-                    </div>
-                    <div class="table__sidepanel item__sidepanel">
-                        <div class="checkbox-container">
-                            <label for="1" class="table-top-text checkbox-label"></label>
-                            <input type="checkbox" id="1" class="checkbox"></input>
-                        </div>
-                        <div class="icon sidepanel__setting-icon table__pop-up">
-                            <svg class="icon dots-menu">
-                                <use xlink:href="#dots-menu"></use>
-                            </svg>
-                            <div class="pop-up-card">
-                                <a href="#" class="pop-up__link link">
-                                    edit
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    duplicate
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    unpublish
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    delete
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="table__item">
-                    <div class="table__title text">
-
-                        <span>Shipping & Returns</span>
-                    </div>
-                    <div class="table__elements">
-                        <div class="table__element table-top-text">
-                        </div>
-                    </div>
-                    <div class="table__sidepanel item__sidepanel">
-                        <div class="checkbox-container">
-                            <label for="1" class="table-top-text checkbox-label"></label>
-                            <input type="checkbox" id="1" class="checkbox"></input>
-                        </div>
-                        <div class="icon sidepanel__setting-icon table__pop-up">
-                            <svg class="icon dots-menu">
-                                <use xlink:href="#dots-menu"></use>
-                            </svg>
-                            <div class="pop-up-card">
-                                <a href="#" class="pop-up__link link">
-                                    edit
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    duplicate
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    unpublish
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    delete
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="table__item">
-                    <div class="table__title text">
-
-                        <span>Schedule a Consultation</span>
-                    </div>
-                    <div class="table__elements">
-                        <div class="table__element table-top-text">
-                        </div>
-                    </div>
-                    <div class="table__sidepanel item__sidepanel">
-                        <div class="checkbox-container">
-                            <label for="1" class="table-top-text checkbox-label"></label>
-                            <input type="checkbox" id="1" class="checkbox"></input>
-                        </div>
-                        <div class="icon sidepanel__setting-icon table__pop-up">
-                            <svg class="icon dots-menu">
-                                <use xlink:href="#dots-menu"></use>
-                            </svg>
-                            <div class="pop-up-card">
-                                <a href="#" class="pop-up__link link">
-                                    edit
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    duplicate
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    unpublish
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    delete
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="table__item">
-                    <div class="table__title text">
-
-                        <span>Privacy Policy</span>
-                    </div>
-                    <div class="table__elements">
-                        <div class="table__element table-top-text">
-                        </div>
-                    </div>
-                    <div class="table__sidepanel item__sidepanel">
-                        <div class="checkbox-container">
-                            <label for="1" class="table-top-text checkbox-label"></label>
-                            <input type="checkbox" id="1" class="checkbox"></input>
-                        </div>
-                        <div class="icon sidepanel__setting-icon table__pop-up">
-                            <svg class="icon dots-menu">
-                                <use xlink:href="#dots-menu"></use>
-                            </svg>
-                            <div class="pop-up-card">
-                                <a href="#" class="pop-up__link link">
-                                    edit
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    duplicate
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    unpublish
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    delete
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="table__item item--unactive">
-                    <div class="table__title text">
-
-                        <span>Portfolio</span>
-                    </div>
-                    <div class="table__elements">
-                        <div class="table__element table-top-text">
-                        </div>
-                    </div>
-                    <div class="table__sidepanel item__sidepanel">
-                        <div class="checkbox-container">
-                            <label for="1" class="table-top-text checkbox-label"></label>
-                            <input type="checkbox" id="1" class="checkbox"></input>
-                        </div>
-                        <div class="icon sidepanel__setting-icon table__pop-up">
-                            <svg class="icon dots-menu">
-                                <use xlink:href="#dots-menu"></use>
-                            </svg>
-                            <div class="pop-up-card">
-                                <a href="#" class="pop-up__link link">
-                                    edit
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    duplicate
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    unpublish
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    delete
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="table__item">
-                    <div class="table__title text">
-
-                        <span>Meet The Team</span>
-                    </div>
-                    <div class="table__elements">
-                        <div class="table__element table-top-text">
-                        </div>
-                    </div>
-                    <div class="table__sidepanel item__sidepanel">
-                        <div class="checkbox-container">
-                            <label for="1" class="table-top-text checkbox-label"></label>
-                            <input type="checkbox" id="1" class="checkbox"></input>
-                        </div>
-                        <div class="icon sidepanel__setting-icon table__pop-up">
-                            <svg class="icon dots-menu">
-                                <use xlink:href="#dots-menu"></use>
-                            </svg>
-                            <div class="pop-up-card">
-                                <a href="#" class="pop-up__link link">
-                                    edit
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    duplicate
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    unpublish
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    delete
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="table__item item--unactive">
-                    <div class="table__title text">
-
-                        <span>Join Our Team</span>
-                    </div>
-                    <div class="table__elements">
-                        <div class="table__element table-top-text">
-                            <!-- <div class="table__element table-top-text">
-                                3873
-                            </div>
-                            <div class="table__element table-top-text">
-                                0
-                            </div>
-                            <div class="table__element table-top-text">
-                                0 
-                            </div>
-                            <div class="table__element table-top-text">
-                                LoremLo remLoj ytjtyjty jtyj
-                            </div>
-                            <div class="table__element table-top-text">
-                                Lor
-                            </div>
-                            <div class="table__element table-top-text">
-                                item 2
-                            </div>
-                            <div class="table__element table-top-text">
-                                nfngfngf, ip 
-                            </div>
-                            <div class="table__element table-top-text">
-                                Lorem 
-                            </div>
-                            <div class="table__element table-top-text">
-                                Lorem 
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="table__sidepanel item__sidepanel">
-                        <div class="checkbox-container">
-                            <label for="1" class="table-top-text checkbox-label"></label>
-                            <input type="checkbox" id="1" class="checkbox"></input>
-                        </div>
-                        <div class="icon sidepanel__setting-icon table__pop-up">
-                            <svg class="icon dots-menu">
-                                <use xlink:href="#dots-menu"></use>
-                            </svg>
-                            <div class="pop-up-card">
-                                <a href="#" class="pop-up__link link">
-                                    edit
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    duplicate
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    unpublish
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    delete
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="table__item">
-                    <div class="table__title text">
-
-                        <span>Leave a review</span>
-                    </div>
-                    <div class="table__elements">
-                        <div class="table__element table-top-text">
-                        </div>
-                    </div>
-                    <div class="table__sidepanel item__sidepanel">
-                        <div class="checkbox-container">
-                            <label for="1" class="table-top-text checkbox-label"></label>
-                            <input type="checkbox" id="1" class="checkbox"></input>
-                        </div>
-                        <div class="icon sidepanel__setting-icon table__pop-up">
-                            <svg class="icon dots-menu">
-                                <use xlink:href="#dots-menu"></use>
-                            </svg>
-                            <div class="pop-up-card">
-                                <a href="#" class="pop-up__link link">
-                                    edit
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    duplicate
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    unpublish
-                                </a>
-                                <a href="#" class="pop-up__link link">
-                                    delete
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
 
             </div>
 

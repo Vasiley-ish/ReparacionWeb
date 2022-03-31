@@ -35,7 +35,7 @@ class SubmitController extends Controller
 
     public  function show(SubmitRequest $req){
         $form = new SubmitModel();
-        return view('user', ['data' => $form->orderBy('updated_at', 'desc')->where( 'name', $req->user()->name)->get()]);
+        return view('user', ['data' => $form->orderBy('updated_at', 'desc')->get()]);
     }
 
     public  function showAdmin(){
